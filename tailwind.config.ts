@@ -22,6 +22,9 @@ const config: Config = {
 
         separator: "#bfbfbf",
       },
+      backgroundImage: {
+        hero: "url('/hill-image.jpg')",
+      },
     },
   },
   plugins: [],

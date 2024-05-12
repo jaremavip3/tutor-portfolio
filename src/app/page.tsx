@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="bg-backgroundCream h-dvh flex flex-col ">
+    <main className=" h-dvh flex flex-col ">
       <Header />
       <Hero />
       <About />

@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="items-center justify-between fixed w-full top-0 flex h-20 px-4  md:px-20 md:h-24 bg-slate-200"
+      className="items-center justify-between fixed w-full top-0 flex h-20 px-4   md:px-20  md:h-24 bg-backgroundCream "
     >
       {/* Mobile Menu */}
       <div
@@ -30,10 +30,10 @@ export default function Navbar() {
       <div
         onClick={toggleSlideover}
         id="slideover"
-        className={` order-2 opacity-0 md:opacity-100 bg-backgroundCream md:bg-inherit md:h-auto  md:w-auto h-screen w-full flex items-center justify-center md:static  md:right-auto absolute right-0 md:transform-none transition ease-in-out duration-150 ${
+        className={` order-2 opacity-0 md:opacity-100  bg-backgroundCream md:h-auto  md:w-auto h-screen w-full flex items-center justify-center md:static  md:right-auto absolute top-0 right-0 md:transform-none transition ease-in-out duration-150 ${
           isSlideoverOpen
             ? "opacity-100"
-            : "translate-x-full delay-75 duration-200"
+            : "translate-x-full delay-75 duration-300"
         }`}
       >
         <ul className="flex flex-col md:flex-row items-center justify-evenly  gap-8  text-xl font-normal text-textBlack">

@@ -33,7 +33,7 @@ export default function Footer() {
   );
 
   return (
-    <section id="footer" ref={container}>
+    <section id="footer" ref={container} className="bg-backgroundCream">
       This is footer
       <svg
         xmlns="http://www.w3.org/2000/svg"

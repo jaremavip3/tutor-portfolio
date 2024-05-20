@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="items-center justify-between fixed w-full top-0 flex h-20 px-4   md:px-20  md:h-24 bg-backgroundCream "
+      className="items-center justify-between fixed w-full top-0 flex h-20 px-4   md:px-20  md:h-24 bg-backgroundCream z-10"
     >
       {/* Mobile Menu */}
       <div

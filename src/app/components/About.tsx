@@ -1,4 +1,5 @@
 import Image from "next/image";
+import about_1 from "../../../public/about_1.png";
 
 export default function About() {
   return (
@@ -16,10 +17,11 @@ export default function About() {
         <div className="div2 z-10 flex items-center justify-center ">
           <Image
             alt="Enlgish tutor photo"
-            src={"/about_1.png"}
+            src={about_1}
             width={400}
             height={300}
             className=""
+            placeholder="blur"
           />
         </div>
 

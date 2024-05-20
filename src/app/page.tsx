@@ -30,7 +30,7 @@ export default function Home() {
   }),
     [];
   return (
-    <main className=" h-dvh flex flex-col ">
+    <main className=" h-dvh flex flex-col bg-backgroundCream">
       <Header />
       <Hero />
       <About />

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { motion, useScroll, useTransform } from "framer-motion";
 import { use, useEffect, useRef, useState } from "react";
 import { text } from "stream/consumers";
@@ -28,7 +29,7 @@ export default function Footer() {
   const y = useTransform(
     scrollYProgress,
     [0, 1],
-    [windowWidth < 768 ? -75 : -200, 0]
+    [windowWidth < 768 ? -150 : -300, 0]
   );
 
   return (
@@ -63,10 +64,26 @@ export default function Footer() {
           })}
         </text>
       </svg>
-      <motion.div
-        style={{ y }}
-        className="h-16 md:h-[250px]  bg-slate-200 overflow-hidden"
-      ></motion.div>
+      <div className="h-48 md:h-[250px]  bg-slate-200 overflow-hidden  flex ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
+          style={{ y }}
+          className=" flex-1 h-full justify-center items-center flex gap-10 p-10"
+        >
+          {[...Array(4)].map((_, index) => {
+            return (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={`footer_${index + 1}`}
+                src={`/footer_${index + 1}.svg`}
+                className="w-8 md:w-16 md:h-16 "
+              ></img>
+            );
+          })}
+        </motion.div>
+      </div>
     </section>
   );
 }

@@ -8,7 +8,7 @@ export default function About() {
       className="py-8 lg:min-h-dvh  flex flex-col justify-center items-center px-4 md:px-20 bg-backgroundCream "
     >
       <div className="lg:mt-24 xl:mt-0 grid  grid-cols-1 lg:grid-cols-[1.5fr_2.5fr] xl:grid-cols-[1.2fr_2.2fr] grid-rows-[0.2fr_1.8fr] lg:gap-y-12 xl:gap-y-2 gap-x-8 grid-flow-row lg:w-10/12 xl:w-9/12 ">
-        <div className="div1 lg:col-span-2 justify-self-center">
+        <div className="div1 lg:col-span-2 justify-self-center text-nowrap lg:justify-self-start ">
           <h2 className="text-7xl font-extrabold text-secondaryPurple mb-6 lg:mb-0">
             About me
           </h2>

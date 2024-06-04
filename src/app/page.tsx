@@ -9,6 +9,7 @@ import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
+import Offer from "./components/Offer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Offer />
       <Features />
       <Contact />
       <Footer />
